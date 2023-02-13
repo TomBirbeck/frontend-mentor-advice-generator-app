@@ -1,28 +1,30 @@
 :root {
-    font-family: 'Manrope', sans-serif;
+    --primary-font: 'Manrope', sans-serif;
     --cyan: hsl(193, 38%, 86%);
     --neon: hsl(150, 100%, 66%);
     --primary: hsl(218, 23%, 16%);
     --secondary: hsl(217, 19%, 24%);
     --tertiary: hsl(217, 19%, 38%);
+}
+*{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     width: 375px;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--primary);
 }
 
 main {
-    height: 100vh;
-    width: 100vw;
+    height: 95vh;
+    width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--primary);
 }
 
 .card {
@@ -30,7 +32,7 @@ main {
     flex-direction: column;
     margin-top: 18vh;
     width: 340px;
-    height: 340px;
+    height: 300px;
     background-color: var(--secondary);
     border-radius: 12px;
     padding: 10px;
@@ -41,13 +43,17 @@ main {
     text-align: center;
     color: var(--neon);
     font-size: 15px;
+    font-weight: 100;
 }
 
 .advice {
-    font-size: 20px;
+    font-family: var(--primary-font);
+    font-size: 22px;
+    font-weight: 800;
     color: var(--cyan);
     text-align: center;
     height: 200px;
+    padding: 18px 0;
 }
 
 .divider {
@@ -56,18 +62,21 @@ main {
 
 .button {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    padding: 20px;
+    width: fit-content;
     background-color: var(--neon);
     border: none;
     position: relative;
-    /* top: 195px; */
-    top: 11%;
-    right: -41.5%;
+    top: 13%;
+    right: -40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    color: var(--cyan)
+ }
 .attribution a { color: hsl(228, 45%, 44%); }
