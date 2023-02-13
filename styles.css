@@ -1,0 +1,62 @@
+:root {
+    font-family: 'Manrope', sans-serif;
+    --cyan: hsl(193, 38%, 86%);
+    --neon: hsl(150, 100%, 66%);
+    --primary: hsl(218, 23%, 16%);
+    --secondary: hsl(217, 19%, 24%);
+    --tertiary: hsl(217, 19%, 38%);
+}
+
+body {
+    width: 375px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18vh;
+    width: 340px;
+    height: 340px;
+    background-color: var(--secondary);
+    border-radius: 12px;
+}
+
+.advice-header {
+    margin-top: 30px;
+    text-align: center;
+    color: var(--neon);
+    font-size: 15px;
+}
+
+.divider {
+    align-self: center;
+}
+
+.button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: var(--neon);
+    border: none;
+    position: relative;
+    /* top: 195px; */
+    top: 58%;
+    right: -40%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
