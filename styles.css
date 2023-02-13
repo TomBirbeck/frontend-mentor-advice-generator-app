@@ -5,11 +5,11 @@
     --primary: hsl(218, 23%, 16%);
     --secondary: hsl(217, 19%, 24%);
     --tertiary: hsl(217, 19%, 38%);
+    box-sizing: border-box;
 }
 
 body {
     width: 375px;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     display: flex;
@@ -33,13 +33,21 @@ main {
     height: 340px;
     background-color: var(--secondary);
     border-radius: 12px;
+    padding: 10px;
 }
 
 .advice-header {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
     color: var(--neon);
     font-size: 15px;
+}
+
+.advice {
+    font-size: 20px;
+    color: var(--cyan);
+    text-align: center;
+    height: 200px;
 }
 
 .divider {
@@ -54,8 +62,11 @@ main {
     border: none;
     position: relative;
     /* top: 195px; */
-    top: 58%;
-    right: -40%;
+    top: 11%;
+    right: -41.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .attribution { font-size: 11px; text-align: center; }
