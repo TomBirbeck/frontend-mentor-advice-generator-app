@@ -96,10 +96,7 @@ main {
 
     .card {
         margin-top: 0;
-        width: 80%;
-    }
-    .divider {
-        src: url('./images/pattern-divider-desktop.svg');
+        width: 60%;
     }
     
 }
@@ -108,11 +105,9 @@ main {
     .card {
         width: 40%;
     }
-
     .divider {
-        src: url('./images/pattern-divider-desktop.svg');
+        content: url(./images/pattern-divider-desktop.svg);
     }
-    
 }
 
 .attribution { 
